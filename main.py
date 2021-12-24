@@ -3,7 +3,7 @@ import time
 
 from paho.mqtt import client as mqtt_client
 
-
+#изменил параметры работы системы
 broker = 'dev.rightech.io'
 port = 1883
 topic = "base/state"
@@ -16,10 +16,10 @@ client_id = 'mqtt-mlg-greenhouse-mock'
 username = 'mock'
 password = 'mock'
 
-sensors=Sensors(11.0,25.0,50.0)
+sensors=Sensors(6.0,75.0,30.0)
 equipment=Equipment()
 controller=Controller(0)
-controller.acceptCustomMode(11.0,25.0,50.0)#земля-вода
+controller.acceptCustomMode(6.0,75.0,30.0)#земля-вода
 
 online=1
 iteration=14
