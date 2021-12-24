@@ -3,7 +3,7 @@ import time
 
 from paho.mqtt import client as mqtt_client
 
-#новое изменение
+#изменение
 broker = 'dev.rightech.io'
 port = 1883
 topic = "base/state"
